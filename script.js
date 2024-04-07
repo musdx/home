@@ -1,6 +1,8 @@
 function displayClock() {
     const clockContainer = document.querySelector("#clockContainer");
     let date = new Date();
+    const offset = -4 * 60; // EDT is UTC-4 during Daylight Saving Time
+    date.setTime(date.getTime() + offset * 60 * 1000);
     let hrs = date.getHours();
     let min = date.getMinutes();
     if (hrs > 12) {
