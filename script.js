@@ -136,6 +136,11 @@ function main() {
     const aB4Setting = document.querySelector("#aB4Setting");
     const imgB4Setting = document.querySelector("#imgB4Setting");
 
+    const aB5 = document.querySelector("#aB4");
+    const imgB5 = document.querySelector("#imgB4");
+    const aB5Setting = document.querySelector("#aB4Setting");
+    const imgB5Setting = document.querySelector("#imgB4Setting");
+
     // load user prefs
     if (localStorage.getItem("aB1") != null) {
         aB1.href = aB1Setting.value = localStorage.getItem("aB1");
@@ -149,6 +154,9 @@ function main() {
     if (localStorage.getItem("aB4") != null) {
         aB4.href = aB4Setting.value = localStorage.getItem("aB4");
     }
+    if (localStorage.getItem("aB5") != null) {
+        aB5.href = aB5Setting.value = localStorage.getItem("aB5");
+    }
     if (localStorage.getItem("imgB1") != null) {
         imgB1.src = imgB1Setting.value = localStorage.getItem("imgB1");
     }
@@ -160,6 +168,9 @@ function main() {
     }
     if (localStorage.getItem("imgB4") != null) {
         imgB4.src = imgB4Setting.value = localStorage.getItem("imgB4");
+    }
+    if (localStorage.getItem("imgB5") != null) {
+        imgB5.src = imgB5Setting.value = localStorage.getItem("imgB5");
     }
 
     // make settings work
